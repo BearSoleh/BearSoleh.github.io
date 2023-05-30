@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Se Mart Ooo - Fresh Groceries</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Se Mart Ooo</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">HomePage</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="customer.html">Order Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2 style="text-align: center;">FRESH GROCERIES</h2>
+  <main>
+    <input type="text" id="filterInput" placeholder="Search Fresh Groceries">
+    <table width="100%" border="1" id="productTable">
+      <tr>
+        <th>Fresh Groceries</th>
+        <th>Price per (KG)</th>
+        <th>Cart</th>
+      </tr>
+      <tr>
+        <td><img src="ikanSiakap.jpg" alt="Ikan Siakap" width="100" height="100">
+            <br>Ikan Siakap
+        </td>
+        <td>RM 19.50 per KG<br><button onclick="addToCart('Ikan Siakap', 19.50)">Add to Cart</button>
+            <br><button onclick="cancelItem('Ikan Siakap')">Cancel from Cart</button>
+        </td>
+        <td rowspan="7">
+            <h3>Items in Cart:</h3>
+            <a id="cartItems"></a>
+          
+            <h3>Total Price: RM <span id="totalPrice">0</span></h3>
+            <br><button><a href="customer.html">PURCHASE</a></button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="ikanBawalMas.jpg" alt="Ikan Bawal Mas" width="100" height="100">
+            <br>Ikan Bawal Mas
+        </td>
+        <td>RM 28.00 per KG<br><button onclick="addToCart('Ikan Bawal Mas', 28.00)">Add to Cart</button>
+            <br><button onclick="cancelItem('Ikan Bawal Mas')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="chicken.jpg" alt="Chicken" width="100" height="100">
+            <br>Chicken
+        </td>
+        <td>RM 9.50 per KG<br><button onclick="addToCart('Chicken', 9.50)">Add to Cart</button>
+            <br><button onclick="cancelItem('Chicken')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="meat.jpg" alt="Meat" width="100" height="100">
+            <br>Meat
+        </td>
+        <td>RM 38.00 per KG<br><button onclick="addToCart('Meat', 38.00)">Add to Cart</button>
+            <br><button onclick="cancelItem('Meat')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="mutton.jpg" alt="Mutton" width="100" height="100">
+            <br>Mutton
+        </td>
+        <td>RM 48.00 per KG<br><button onclick="addToCart('Mutton', 48.00)">Add to Cart</button>
+            <br><button onclick="cancelItem('Mutton')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="sotong.jpg" alt="Squid" width="100" height="100">
+            <br>Squid
+        </td>
+        <td>RM 28.00 per KG<br><button onclick="addToCart('Squid', 28.00)">Add to Cart</button>
+            <br><button onclick="cancelItem('Squid')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="prawn.jpg" alt="Prawn (Small)" width="100" height="100">
+            <br>Prawn (Small)
+        </td>
+        <td>RM 18.90 per KG<br><button onclick="addToCart('Prawn (Small)', 18.90)">Add to Cart</button>
+            <br><button onclick="cancelItem('Prawn (Small)')">Cancel from Cart</button>
+        </td>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Se Mart Ooo. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Se Mart Ooo - Dry Grocery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Se Mart Ooo</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">HomePage</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="customer.html">Order Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2 style="text-align: center;">DRY GROCERY</h2>
+  <main>
+    <input type="text" id="filterInput" placeholder="Search dry groceries">
+    <table width="100%" border="1" id="productTable">
+      <tr>
+        <th>Dry Groceries</th>
+        <th>Price per (kg)</th>
+        <th>Cart</th>
+      </tr>
+      <tr>
+        <td><img src="butter.jpg" alt="Butter" width="100" height="100">
+            <br>Butter
+        </td>
+        <td>RM 18.00 per KG<br><button onclick="addToCart('Butter', 18.00)">Add to Cart</button>
+            <br><button onclick="cancelItem('Butter')">Cancel from Cart</button>
+        </td>
+        <td rowspan="5">
+            <h3>Items in Cart:</h3>
+            <ul id="cartItems"></ul>
+          
+            <h3>Total Price: RM <span id="totalPrice">0</span></h3>
+            <br><button><a href="customer.html">PURCHASE</a></button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="egg.jpg" alt="Eggs" width="100" height="100">
+            <br>Eggs
+        </td>
+        <td>RM 0.45<br><button onclick="addToCart('Eggs', 0.45)">Add to Cart</button>
+            <br><button onclick="cancelItem('Eggs')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="minyak.jpg" alt="Cooking Oil" width="100" height="100">
+            <br>Cooking Oil
+        </td>
+        <td>RM 3.50 per Packet<br><button onclick="addToCart('Cooking Oil', 3.50)">Add to Cart</button>
+            <br><button onclick="cancelItem('Cooking Oil')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="salt.jpg" alt="Salt" width="100" height="100">
+            <br>Salt
+        </td>
+        <td>RM 1.00 per KG<br><button onclick="addToCart('Salt', 1.00)">Add to Cart</button>
+            <br><button onclick="cancelItem('Salt')">Cancel from Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="gula.jpg" alt="Sugar" width="100" height="100">
+            <br>Tomato
+        </td>
+        <td>RM 2.85 per KG<br><button onclick="addToCart('Sugar', 2.85)">Add to Cart</button>
+            <br><button onclick="cancelItem('Sugar')">Cancel from Cart</button>
+        </td>
+    </tr>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Se Mart Ooo. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
